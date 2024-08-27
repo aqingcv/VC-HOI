@@ -68,7 +68,7 @@ CUDA_VISIBLE_DEVICES=0,1 python main_tip_finetune.py --world-size 2 --pretrained
 ```
 
 #### Test on HICO-DET:
-
+```
 CUDA_VISIBLE_DEVICES=1 python main_tip_finetune.py --world-size 1 --pretrained checkpoints/detr-r50-hicodet.pth --output-dir checkpoints/hico --use_insadapter --num_classes 117 --clip_dir_vit checkpoints/pretrained_clip/ViT-B-16.pt --eval --resume ./VC-HOI/checkpoints/hico_zs_rf_uc --zs --zs_type rare_first --port 1336
 
 
